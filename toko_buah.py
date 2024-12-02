@@ -122,14 +122,6 @@ def cetak_struk():
                print(lihat)
     except Exception as e:
          print(e)
-
-def tambah_buah():
-    inputan = input('Masukan produk tambahan : ')
-    produk = ['apel', 'semangka', 'pisang']
-    produk.append(inputan)
-    with open('produk.txt','a') as new:
-        new.write(inputan)
-    main()
         
          
 def main():
@@ -151,8 +143,6 @@ def main():
             beli(saldo, apel, pisang, semangka)
         elif inputan == '4':
             cetak_struk()
-        elif inputan == '5':
-            tambah_buah()
             break
         else :
             print('error')
